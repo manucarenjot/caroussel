@@ -2,12 +2,10 @@ let photo = document.getElementById('photo');
 let arrowLeft = document.getElementById('arrowLeft');
 let arrowRight = document.getElementById('arrowRight');
 let carousel = document.getElementById('caroussel');
-let middle = document.getElementById('middle');
 
 let largeur = document.getElementById('largeur');
 let hauteur = document.getElementById('hauteur');
 let send = document.getElementById('send');
-
 
 let lesPhotos = ["url(assets/img/20456790.jpg)", "url(assets/img/tree-736885__480.jpg)", "url(assets/img/20494859.jpg)",
     "url(assets/img/centre-img-1-950x500.jpg)", "url(assets/img/libellule-feuille-l760-h550.jpg)", "url(assets/img/jocelyn-armel-10.15-2015-1.jpg)"]
