@@ -23,10 +23,12 @@ h1 {
     border: ridge 10px firebrick;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     align-items: center;
-    align-content: center;
+    align-content: space-around;
     background-color: #1e5e85;
 }
+
 #left {
     width: 10%;
     height: 60%;
@@ -45,7 +47,7 @@ i {
 }
 
 #middle {
-    width: 80%;
+    width: 60%;
     height: 100%;
     border: solid 3px rgba(6, 255, 255, 0.7);
 }
@@ -80,5 +82,16 @@ i {
     justify-content: center;
     align-items: center;
     background-color: #1e5e85;
+}
+
+@keyframes sweepLeft {
+    0% {
+        transform: translateX(50px);
+        opacity: 30%;
+    }
+    100% {
+        transform: translateX(100px);
+    }
+
 }
 

@@ -2,6 +2,7 @@ let photo = document.getElementById('photo');
 let arrowLeft = document.getElementById('arrowLeft');
 let arrowRight = document.getElementById('arrowRight');
 let carousel = document.getElementById('caroussel');
+let middle = document.getElementById('middle');
 
 let largeur = document.getElementById('largeur');
 let hauteur = document.getElementById('hauteur');
@@ -15,10 +16,14 @@ let nombrePhoto = 0;
 
 function right() {
         if (nombrePhoto === 0) {
+            middle.style.animationName = 'sweepLeft';
+            middle.style.animationDuration = '200ms';
             photo.style.backgroundImage = lesPhotos[1];
             nombrePhoto++
         }
         else if (nombrePhoto === 1) {
+            middle.style.animationName = 'sweepLeft';
+            middle.style.animationDuration = '200ms';
             photo.style.backgroundImage = lesPhotos[2];
             nombrePhoto++
         }
@@ -63,6 +68,10 @@ function left() {
 
 function modifTaille() {
     if (largeur.value > '350' && hauteur.value > '350') {
+        carousel.style.width = largeur.value + 'px';
+        carousel.style.height = hauteur.value + 'px';
+    }
+    else if (largeur.value < '850' && hauteur.value < '850') {
         carousel.style.width = largeur.value + 'px';
         carousel.style.height = hauteur.value + 'px';
     }
