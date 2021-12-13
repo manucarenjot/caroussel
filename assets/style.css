@@ -136,6 +136,7 @@ i {
         transform: translateX(-50px);
         opacity: 30%;
     }
+
     100% {
         transform: translateX(-70px);
     }
