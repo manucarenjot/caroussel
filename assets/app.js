@@ -16,26 +16,27 @@ let nombrePhoto = 0;
 
 function right() {
         if (nombrePhoto === 0) {
-            middle.style.animationName = 'sweepLeft';
-            middle.style.animationDuration = '200ms';
+            photo.classList.toggle("anim");
             photo.style.backgroundImage = lesPhotos[1];
             nombrePhoto++
         }
         else if (nombrePhoto === 1) {
-            middle.style.animationName = 'sweepLeft';
-            middle.style.animationDuration = '200ms';
+            photo.classList.toggle("anim2");
             photo.style.backgroundImage = lesPhotos[2];
             nombrePhoto++
         }
         else if (nombrePhoto === 2) {
+            photo.classList.toggle("anim2");
             photo.style.backgroundImage = lesPhotos[3];
             nombrePhoto++
         }
         else if (nombrePhoto === 3) {
+            photo.classList.toggle("anim2");
             photo.style.backgroundImage = lesPhotos[4];
             nombrePhoto++
         }
         else if (nombrePhoto === 4) {
+            photo.classList.toggle("anim2");
             photo.style.backgroundImage = lesPhotos[5];
             nombrePhoto++
         }
@@ -44,22 +45,27 @@ function right() {
 
 function left() {
     if (nombrePhoto === 1) {
+        photo.classList.toggle("anim3");
         photo.style.backgroundImage = lesPhotos[0];
         nombrePhoto--
     }
     else if (nombrePhoto === 2) {
+        photo.classList.toggle("anim4");
         photo.style.backgroundImage = lesPhotos[1];
         nombrePhoto--
     }
     else if (nombrePhoto === 3) {
+        photo.classList.toggle("anim4");
         photo.style.backgroundImage = lesPhotos[2];
         nombrePhoto--
     }
     else if (nombrePhoto === 4) {
+        photo.classList.toggle("anim4");
         photo.style.backgroundImage = lesPhotos[3];
         nombrePhoto--
     }
     else if (nombrePhoto === 5) {
+        photo.classList.toggle("anim4");
         photo.style.backgroundImage = lesPhotos[4];
         nombrePhoto--
     }
@@ -84,7 +90,6 @@ arrowLeft.addEventListener("click", () => {
 
 arrowRight.addEventListener("click", () => {
     right();
-
 })
 
 send.addEventListener("click", () => {

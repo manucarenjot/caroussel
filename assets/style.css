@@ -49,7 +49,6 @@ i {
 #middle {
     width: 60%;
     height: 100%;
-    border: solid 3px rgba(6, 255, 255, 0.7);
 }
 #right {
     width: 10%;
@@ -84,13 +83,61 @@ i {
     background-color: #1e5e85;
 }
 
+.anim {
+    animation-name: sweepLeft;
+    animation-duration: 300ms;
+}
+.anim2 {
+    animation-name: sweepLeft2;
+    animation-duration: 300ms;
+}
+.anim3 {
+    animation-name: sweepRight;
+    animation-duration: 300ms;
+}
+.anim4 {
+    animation-name: sweepRight2;
+    animation-duration: 300ms;
+}
+
 @keyframes sweepLeft {
     0% {
         transform: translateX(50px);
         opacity: 30%;
     }
     100% {
-        transform: translateX(100px);
+        transform: translateX(70px);
+    }
+
+}
+@keyframes sweepLeft2 {
+    0% {
+        transform: translateX(50px);
+        opacity: 30%;
+    }
+    100% {
+        transform: translateX(70px);
+    }
+
+}
+
+@keyframes sweepRight {
+    0% {
+        transform: translateX(-50px);
+        opacity: 30%;
+    }
+    100% {
+        transform: translateX(-70px);
+    }
+
+}
+@keyframes sweepRight2 {
+    0% {
+        transform: translateX(-50px);
+        opacity: 30%;
+    }
+    100% {
+        transform: translateX(-70px);
     }
 
 }
